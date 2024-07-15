@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stonic-transaccion-be.API", "stonic-transaccion-be.API\stonic-transaccion-be.API.csproj", "{026C1649-B59C-4497-B652-F5B0EECB6CC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stonic-transaccion-be.model", "stonic-transaccion-be.model\stonic-transaccion-be.model.csproj", "{E4DC1672-894C-4506-9DC9-677C320C4E64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stonic-transaccion-be.data", "stonic-transaccion-be.data\stonic-transaccion-be.data.csproj", "{F982FE23-3343-44B6-95FB-F73A9081A269}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stonic-transaccion-be.logic", "stonic-transaccion-be.logic\stonic-transaccion-be.logic.csproj", "{B511F693-CD17-4D68-986B-169FE7CB72F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{026C1649-B59C-4497-B652-F5B0EECB6CC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026C1649-B59C-4497-B652-F5B0EECB6CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026C1649-B59C-4497-B652-F5B0EECB6CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026C1649-B59C-4497-B652-F5B0EECB6CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4DC1672-894C-4506-9DC9-677C320C4E64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4DC1672-894C-4506-9DC9-677C320C4E64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4DC1672-894C-4506-9DC9-677C320C4E64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4DC1672-894C-4506-9DC9-677C320C4E64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F982FE23-3343-44B6-95FB-F73A9081A269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F982FE23-3343-44B6-95FB-F73A9081A269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F982FE23-3343-44B6-95FB-F73A9081A269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F982FE23-3343-44B6-95FB-F73A9081A269}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B511F693-CD17-4D68-986B-169FE7CB72F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B511F693-CD17-4D68-986B-169FE7CB72F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B511F693-CD17-4D68-986B-169FE7CB72F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B511F693-CD17-4D68-986B-169FE7CB72F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB02147D-4637-40EF-B089-4158B1A68480}
+	EndGlobalSection
+EndGlobal

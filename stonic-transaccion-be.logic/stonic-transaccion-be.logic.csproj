@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>stonic_transaccion_be.logic</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\stonic-transaccion-be.data\stonic-transaccion-be.data.csproj" />
+    <ProjectReference Include="..\stonic-transaccion-be.model\stonic-transaccion-be.model.csproj" />
+  </ItemGroup>
+
+</Project>
