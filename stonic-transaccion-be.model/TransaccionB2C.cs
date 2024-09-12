@@ -11,10 +11,11 @@ namespace stonic_transaccion_be.model
         public int IdTransaccionB2C { get; set; }
         public int IdComprador { get; set; }
         public int IdVendedor { get; set; }
-        public int IdSucursal { get; set; }
+        public int IdNegocio { get; set; }
         public int Numero { get; set; }
         public DateTime AudFechaRegistro { get; set; }
         public DateTime AudFechaModifico { get; set; }
         public decimal CostoTotal { get; set; }
+        public List<TB2CProducto> TB2CProducto { get; set; }
     }
 }

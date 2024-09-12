@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using stonic_transaccion_be.model;
 
 namespace stonic_transaccion_be.data
@@ -13,23 +14,18 @@ namespace stonic_transaccion_be.data
     {
         public ReturnValue Registrar(TransaccionB2C item)
         {
+            string jsonData = JsonConvert.SerializeObject(item);
             ReturnValue oReturn = new ReturnValue();
 
             try
             {
                 using (var cnn = new NpgsqlConnection(HelpData.ConnectionString()))
                 {
-                    using (var cmd = new NpgsqlCommand("tra_man_transaccionb2c_ins", cnn))
+                    using (var cmd = new NpgsqlCommand("pos_man_transaccionb2c_ins", cnn))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("p_datos", NpgsqlTypes.NpgsqlDbType.Jsonb, jsonData);
 
-                        // Agregar parámetros de entrada
-                        cmd.Parameters.AddWithValue("p_idcomprador", item.IdComprador);
-                        cmd.Parameters.AddWithValue("p_idvendedor", item.IdVendedor);
-                        cmd.Parameters.AddWithValue("p_idsucursal", item.IdSucursal);
-                        cmd.Parameters.AddWithValue("p_costototal", item.CostoTotal);
-
-                        // Agregar parámetros de salida
                         var pMessage = new NpgsqlParameter("p_message", NpgsqlTypes.NpgsqlDbType.Varchar, 200)
                         {
                             Direction = ParameterDirection.Output
